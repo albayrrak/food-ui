@@ -1,0 +1,35 @@
+$primary-color: #EA7C69;
+$secondary-color: #9288E0;
+
+$dark-primary: #252836;
+$dark-secondary: #1F1D2B;
+$form-bg: #2D303E;
+$dark-line: #393C49;
+
+$text-dark: #3B5162;
+$text-gray: #889898;
+$text-light: #ABBBC2;
+$text-lighter: #E0E6E9;
+
+
+$white-color: #fff;
+
+.text-dark {
+    color: $text-dark;
+}
+
+.text-gray {
+    color: $text-gray;
+}
+
+.text-light {
+    color: $text-light;
+}
+
+.text-lighter {
+    color: $text-lighter;
+}
+
+.text-primary {
+    color: $primary-color;
+}

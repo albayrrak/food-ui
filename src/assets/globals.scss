@@ -1,0 +1,71 @@
+@use "./colors" as *;
+@use "./typography" as *;
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    background: $dark-primary;
+    color: $white-color;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+body {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: $white-color;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $dark-secondary;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $dark-line;
+    border-radius: 10px;
+}

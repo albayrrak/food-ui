@@ -1,0 +1,26 @@
+@use "../../../../assets/colors" as *;
+
+.form-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px;
+    background: $form-bg;
+    border: 1px solid $dark-line;
+    border-radius: 8px;
+    color: $text-lighter;
+    font-size: 14px;
+    font-weight: 400;
+
+    input {
+        background: none;
+        border: none;
+        color: $text-lighter;
+        outline: none;
+
+        &::placeholder {
+            color: $text-light;
+
+        }
+    }
+}

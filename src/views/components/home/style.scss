@@ -1,0 +1,112 @@
+@use "../../../assets/colors" as *;
+
+.home {
+    flex: 1;
+    padding: 24px;
+    overflow: auto;
+
+    &.sticky {
+        padding-top: 0;
+
+        .home-top {
+            padding: 24px;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            border-bottom: 1px solid $dark-line;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: $dark-primary;
+        }
+    }
+
+    &-top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+
+
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+    }
+
+    &-content {
+        margin-top: 24px;
+
+        .tabmenu {
+            display: flex;
+            width: 100%;
+            gap: 32px;
+            border-bottom: 1px solid $dark-line;
+
+            .tabmenu-item {
+                cursor: pointer;
+                padding-bottom: 32px;
+
+                &.active {
+                    position: relative;
+
+                    span {
+                        color: $primary-color;
+                    }
+
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        bottom: -1.8px;
+                        left: 0;
+                        width: 70%;
+                        height: 3px;
+                        background-color: $primary-color;
+                        border-radius: 6px;
+                    }
+                }
+            }
+        }
+
+        .tab-container {
+            margin-top: 24px;
+        }
+
+        .tab-choose {
+
+            .choose-top {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 24px;
+
+                .selectbox {
+                    background: $dark-secondary;
+                    color: #fff;
+                    padding: 15px 14px;
+                    border-radius: 8px;
+                    border: 1px solid $dark-line;
+                    width: 100px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .icon {
+                        padding: 6px;
+                    }
+                }
+            }
+
+            .choose-content {
+                display: flex;
+                gap: 28px;
+                flex-wrap: wrap;
+
+
+            }
+        }
+    }
+}
